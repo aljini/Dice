@@ -5,25 +5,78 @@ void setup()
 }
 void draw()
 {
-	//your code here
+	for {}
 }
 void mousePressed()
 {
 	redraw();
 }
-class Die //models one single dice cube
+class Die 
 {
-	//variable declarations here
+	int myX,myY,numRoll;
 	Die(int x, int y) //constructor
 	{
-		
+		myX = x;
+		myY = y;
+		numRoll = (int) (Math.random()*6)+1
+
 	}
 	void roll()
 	{
-		//your code here
+
+		if (numRoll==1){
+
+				fill(0);
+				ellipse (50,50,20,20);
+		}
+
+		if (numRoll==2){
+
+				fill(0);
+				ellipse (25,25,20,20);
+				ellipse (75,75,20,20);
+		}
+
+		if (numRoll==3){
+
+				fill(0);
+				ellipse (25,25,20,20);
+				ellipse (75,75,20,20);
+				ellipse (50,50,20,20);
+		}
+
+		if (numRoll==4){
+
+				fill(0);
+				ellipse (25,25,20,20);
+				ellipse (75,75,20,20);
+				ellipse (25,75,20,20);
+				ellipse (75,25,20,20);
+		}
+
+		if (numRoll==5){
+
+				fill(0);
+				ellipse (25,25,20,20);
+				ellipse (75,75,20,20);
+				ellipse (25,75,20,20);
+				ellipse (75,25,20,20);
+				ellipse (50,50,20,20);
+		}
+
+		if (numRoll==6){
+
+				fill(0);
+				ellipse (25,25,20,20);
+				ellipse (75,75,20,20);
+				ellipse (25,75,20,20);
+				ellipse (75,25,20,20);
+				ellipse (25,50,20,20);
+				ellipse (75,50,20,20);
+		}
 	}
 	void show()
 	{
-		rect(0,0,50,50)
+		rect(myX,myY,100,100)
 	}
 }
