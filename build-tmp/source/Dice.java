@@ -14,6 +14,7 @@ import java.io.IOException;
 
 public class Dice extends PApplet {
 
+int m= 25;
 public void setup()
 {
 	size(1000,1000);
@@ -60,52 +61,52 @@ class Die
 		if (numRoll==1){
 
 				fill(0);
-				ellipse (myX,myY,20,20);
+				ellipse (myX+50,myY+50,20,20);
 		}
 
 		if (numRoll==2){
 
 				fill(0);
-				ellipse (myX-25,myY-25,20,20);
 				ellipse (myX+25,myY+25,20,20);
+				ellipse (myX+75,myY+75,20,20);
 		}
 
 		if (numRoll==3){
 
 				fill(0);
-				ellipse (myX-25,myY-25,20,20);
 				ellipse (myX+25,myY+25,20,20);
-				ellipse (myX,myY,20,20);
+				ellipse (myX+75,myY+75,20,20);
+				ellipse (myX+50,myY+50,20,20);
 		}
 
 		if (numRoll==4){
 
 				fill(0);
-				ellipse (myX-25,myY-25,20,20);
 				ellipse (myX+25,myY+25,20,20);
-				ellipse (myX-25,myY+25,20,20);
-				ellipse (myX+25,myY-25,20,20);
+				ellipse (myX+75,myY+75,20,20);
+				ellipse (myX+25,myY+75,20,20);
+				ellipse (myX+75,myY+25,20,20);
 		}
 
 		if (numRoll==5){
 
 				fill(0);
-				ellipse (myX-25,myY-25,20,20);
 				ellipse (myX+25,myY+25,20,20);
-				ellipse (myX-25,myY+25,20,20);
-				ellipse (myX+25,myY-25,20,20);
-				ellipse (myX,myY,20,20);
+				ellipse (myX+75,myY+75,20,20);
+				ellipse (myX+25,myY+75,20,20);
+				ellipse (myX+75,myY+25,20,20);
+				ellipse (myX+50,myY+50,20,20);
 		}
 
 		if (numRoll==6){
 
 				fill(0);
-				ellipse (myX-25,myY-25,20,20);
 				ellipse (myX+25,myY+25,20,20);
-				ellipse (myX-25,myY+25,20,20);
-				ellipse (myX+25,myY-25,20,20);
-				ellipse (myX-25,myY,20,20);
-				ellipse (myX+25,myY,20,20);
+				ellipse (myX+75,myY+75,20,20);
+				ellipse (myX+25,myY+75,20,20);
+				ellipse (myX+75,myY+25,20,20);
+				ellipse (myX+25,myY+50,20,20);
+				ellipse (myX+75,myY+50,20,20);
 	    }
     }
 }
